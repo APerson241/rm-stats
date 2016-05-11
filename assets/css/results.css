@@ -1,0 +1,52 @@
+table {
+    background-color: white;
+}
+
+th, td {
+    border: thin solid black;
+}
+
+td.title {
+    word-break: break-all;
+}
+
+.matrix {
+    margin-right: 10px;
+    background-color: #F3F3F3;
+    border-right: thin solid black;
+    border-bottom: thin solid black;
+}
+
+.matrix td, .matrix th {
+    padding: .25em;
+    text-align: center;
+}
+
+.matrix th {
+    background-color: white;
+}
+
+.matrix td {
+    border: thin dotted #BBB;
+}
+
+.matrix td.hidden {
+    background-color: #F3F3F3;
+    border: 0;
+}
+
+.matrix td.agree-nonzero {
+    background-color: #9f9;
+}
+
+.matrix td.agree-zero {
+    background-color: #b7e0b7;
+}
+
+.matrix td.disagree-nonzero {
+    background-color: #ff9;
+}
+
+.matrix td.disagree-zero {
+    background-color: #e0e0b7;
+}

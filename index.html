@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RM Stats</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>RM Stats Tool</h1>
+    <p>This tool analyzes how a user votes in <a href="https://en.wikipedia.org/wiki/WP:RM">RM discussions</a> and reports statistical results.</p>
+    <form action="cgi-bin/rm-stats.py" method="get">
+      <table>
+        <tr>
+          <th><label for="username">Username</label></th>
+          <td><input type="text" id="username" name="username" required /></td>
+        </tr>
+        <tr>
+          <th><label for="max">Number of pages to look at</label></th>
+          <td><input type="text" id="max" name="max" value="50" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+
