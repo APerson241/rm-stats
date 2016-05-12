@@ -90,7 +90,12 @@ def print_stats(username, max_pages):
     for title, text in texts.items():
         fragments = text.split("==")[1:]
         for i in xrange(0, len(fragments), 2):
-            heading, body = fragments[i:i+2]
+            try:
+                heading, body = fragments[i:i+2]
+            except ValueError:
+                print("<p>Note: I wasn't able to parse <a href='https://en.wikipedia.org/wiki/{}'>{}</a> because of an error in a section header.</p>".format(urllib.quote(title.encode("utf-8")), title.encode("utf-8")))
+                continue
+
             if "requested move" not in body:
                 continue
 
